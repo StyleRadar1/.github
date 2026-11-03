@@ -36,26 +36,25 @@
 
 ---
 
-### Ecosistema de Repositorios (Arquitectura de Microservicios)
+### Ecosistema de Repositorios (Arquitectura de Microservicios) 
 
 | Repositorio | Tipo / Rol | Squad Responsable | Stack Tecnológico | Estado |
 | :--- | :--- | :--- | :--- | :---: |
-| `styleradar-frontend` | Frontend SPA / PWA | Frontend Squad | React 18, TypeScript, Tailwind | Producción |
-| `sr-api-gateway` | API Gateway & Routing | Squad Infraestructura | Spring Cloud Gateway, Redis | Activo |
-| `ms-autenticacion` | Microservicio (Seguridad / Auth) | Squad 1 (Identidad) | Spring Security 6, JWT, Redis | Activo |
-| `ms-usuarios` | Microservicio (Perfiles / Cuentas) | Squad 1 (Identidad) | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `ms-tiendas` | Microservicio (Gestión de Tiendas) | Squad 1 (Identidad) | Java 21, Spring Boot 3.2, PostGIS | Activo |
-| `ms-item-catalogo` | Microservicio (Catálogo & Prendas) | Squad 2 (Catálogo) | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `ms-inventario` | Microservicio (Stock Multi-sede) | Squad 2 (Catálogo) | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `ms-geolocalizacion` | Microservicio (Búsqueda Espacial) | Squad 2 (Catálogo) | Java 21, PostgreSQL + PostGIS | Activo |
-| `ms-probador-virtual` | Microservicio (Probador IA VTON) | Squad 3 (Experiencia) | Spring Boot 3.2, FASHN AI API | Activo |
-| `ms-favoritos-interac` | Microservicio (Playlists & Likes) | Squad 3 (Experiencia) | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `ms-resenas` | Microservicio (Reseñas & Feedback) | Squad 3 (Experiencia) | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `ms-pagos-suscripc` | Microservicio (Pasarela & Planes) | Squad 4 (Transacciones) | Java 21, Spring Boot 3.2, RabbitMQ | Activo |
-| `ms-notificaciones` | Microservicio (Alertas & Mensajería) | Squad 5 (Soporte) | RabbitMQ, Mailgun, WebSocket | Activo |
-| `ms-estadisticas` | Microservicio (Analítica & Métricas)| Squad 5 (Soporte) | PostgreSQL Views, RabbitMQ | Activo |
-| `ms-auditoria-logs` | Microservicio (Trazabilidad Global) | Squad 5 (Soporte) | PostgreSQL Append-Only, RabbitMQ | Activo |
-| `styleradar-infra` | Infraestructura & Cloud | Squad DevOps | Docker Compose, Azure AKS, CI/CD | Activo |
+| `StyleRadar-Frontend` | Frontend SPA / PWA | Frontend Squad | React 18, TypeScript, Tailwind | Producción |
+| `PT8080-ApiGateway-Service` | API Gateway & Routing | PT8080 | Spring Cloud Gateway, Redis | Activo |
+| `CADCHE-Authentication-Service` | Microservicio (Seguridad / Auth) | CADCHE | Spring Security 6, JWT, Redis | Activo |
+| `CADCHE-Users-Service` | Microservicio (Perfiles / Cuentas) | CADCHE | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
+| `CADCHE-Stores-Service` | Microservicio (Gestión de Tiendas) | CADCHE | Java 21, Spring Boot 3.2, PostGIS | Activo |
+| `RST-ItemCatalog-Service` | Microservicio (Catálogo & Prendas) | RST | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
+| `RST-Inventory-Service` | Microservicio (Stock Multi-sede) | RST | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
+| `RST-Geolocation-Service` | Microservicio (Búsqueda Espacial) | RST | Java 21, PostgreSQL + PostGIS | Activo |
+| `PT8080-VirtualTryOn-Service` | Microservicio (Probador IA VTON) | PT8080 | Spring Boot 3.2, FASHN AI API | Activo |
+| `RST-Playlist-Service` | Microservicio (Playlists & Likes) | RST | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
+| `NQS-Payment-Service` | Microservicio (Pasarela & Planes) | NQS | Java 21, Spring Boot 3.2, RabbitMQ | Activo |
+| `GJ-Notification-Service` | Microservicio (Alertas & Mensajería) | GJ | RabbitMQ, Mailgun, WebSocket | Activo |
+| `NQS-Statistics-Service` | Microservicio (Analítica & Métricas)| NQS | PostgreSQL Views, RabbitMQ | Activo |
+| `PT8080-Donations-Service` | Microservicio (Donaciones y segunda vida)| PT8080 | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
+
 
 ---
 
