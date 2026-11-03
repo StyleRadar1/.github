@@ -38,23 +38,22 @@
 
 ### Ecosistema de Repositorios (Arquitectura de Microservicios) 
 
-| Repositorio | Tipo / Rol | Squad Responsable | Stack Tecnológico | Estado |
-| :--- | :--- | :--- | :--- | :---: |
-| `StyleRadar-Frontend` | Frontend SPA / PWA | Frontend Squad | React 18, TypeScript, Tailwind | Producción |
-| `PT8080-ApiGateway-Service` | API Gateway & Routing | PT8080 | Spring Cloud Gateway, Redis | Activo |
-| `CADCHE-Authentication-Service` | Microservicio (Seguridad / Auth) | CADCHE | Spring Security 6, JWT, Redis | Activo |
-| `CADCHE-Users-Service` | Microservicio (Perfiles / Cuentas) | CADCHE | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `CADCHE-Stores-Service` | Microservicio (Gestión de Tiendas) | CADCHE | Java 21, Spring Boot 3.2, PostGIS | Activo |
-| `RST-ItemCatalog-Service` | Microservicio (Catálogo & Prendas) | RST | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `RST-Inventory-Service` | Microservicio (Stock Multi-sede) | RST | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `RST-Geolocation-Service` | Microservicio (Búsqueda Espacial) | RST | Java 21, PostgreSQL + PostGIS | Activo |
-| `PT8080-VirtualTryOn-Service` | Microservicio (Probador IA VTON) | PT8080 | Spring Boot 3.2, FASHN AI API | Activo |
-| `RST-Playlist-Service` | Microservicio (Playlists & Likes) | RST | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-| `NQS-Payment-Service` | Microservicio (Pasarela & Planes) | NQS | Java 21, Spring Boot 3.2, RabbitMQ | Activo |
-| `GJ-Notification-Service` | Microservicio (Alertas & Mensajería) | GJ | RabbitMQ, Mailgun, WebSocket | Activo |
-| `NQS-Statistics-Service` | Microservicio (Analítica & Métricas)| NQS | PostgreSQL Views, RabbitMQ | Activo |
-| `PT8080-Donations-Service` | Microservicio (Donaciones y segunda vida)| PT8080 | Java 21, Spring Boot 3.2, PostgreSQL | Activo |
-
+| Repositorio | Tipo / Rol | Squad Responsable | Stack Tecnológico | Estado | Base de datos |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| `StyleRadar-Frontend` | Frontend SPA / PWA | Frontend Squad | React 18, TypeScript, Tailwind | Producción | No
+| `PT8080-ApiGateway-Service` | API Gateway & Routing | PT8080 | Spring Cloud Gateway| Activo | No
+| `CADCHE-Authentication-Service` | Microservicio (Seguridad / Auth) | CADCHE | Spring Security 6, JWT| Activo | PostgreSQL + Redis
+| `CADCHE-Users-Service` | Microservicio (Perfiles / Cuentas) | CADCHE | Java 21, Spring Boot 3.2| Activo | PostgreSQL con soporte JSONB 
+| `CADCHE-Stores-Service` | Microservicio (Gestión de Tiendas) | CADCHE | Java 21, Spring Boot 3.2 | Activo | PostgreSQL +  Blob Storage
+| `RST-ItemCatalog-Service` | Microservicio (Catálogo & Prendas) | RST | Java 21, Spring Boot 3.2| Activo | PostgreSQL
+| `RST-Inventory-Service` | Microservicio (Stock Multi-sede) | RST | Java 21, Spring Boot 3.2| Activo | PostgreSQL
+| `RST-Geolocation-Service` | Microservicio (Búsqueda Espacial) | RST | Java 21| Activo | PostgreSQL + PostGIS 
+| `PT8080-VirtualTryOn-Service` | Microservicio (Probador IA VTON) | PT8080 | Spring Boot 3.2, FASHN AI API | Activo | 	PostgreSQL
+| `RST-Playlist-Service` | Microservicio (Playlists & Likes) | RST | Java 21, Spring Boot 3.2| Activo | PostgreSQL
+| `NQS-Payment-Service` | Microservicio (Pasarela & Planes) | NQS | Java 21, Spring Boot 3.2| Activo | PostgreSQL
+| `GJ-Notification-Service` | Microservicio (Alertas & Mensajería) | GJ | RabbitMQ, Mailgun, WebSocket | Activo | PostgreSQL
+| `NQS-Statistics-Service` | Microservicio (Analítica & Métricas)| NQS | RabbitMQ | Activo | PostgreSQL Views
+| `PT8080-Donations-Service` | Microservicio (Donaciones y segunda vida)| PT8080 | Java 21, Spring Boot 3.2, | Activo | PostgreSQL 
 
 ---
 
