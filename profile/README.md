@@ -52,6 +52,7 @@
 | `RST-Playlist-Service` | Microservicio (Playlists & Likes) | RST | Java 21, Spring Boot 3.2| Activo | PostgreSQL
 | `NQS-Payment-Service` | Microservicio (Pasarela & Planes) | NQS | Java 21, Spring Boot 3.2| Activo | PostgreSQL
 | `GJ-Notification-Service` | Microservicio (Alertas & Mensajería) | GJ | RabbitMQ, Mailgun, WebSocket | Activo | PostgreSQL
+| `GJ-Chat-Service` | Microservicio de chat entre comprador y vendedor, con mensajería en tiempo real | GJ | Java 17, Spring Boot 3.2, Spring Security/JWT, WebSocket STOMP, RabbitMQ y OpenFeign | Activo | PostgreSQL
 | `NQS-Statistics-Service` | Microservicio (Analítica & Métricas)| NQS | RabbitMQ | Activo | PostgreSQL Views
 | `PT8080-Donations-Service` | Microservicio (Donaciones y segunda vida)| PT8080 | Java 21, Spring Boot 3.2, | Activo | PostgreSQL 
 
